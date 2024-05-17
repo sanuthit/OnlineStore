@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Shopping Cart</title>
+	<link rel="stylesheet" href="styles\styles.css">
+	
+</head>
+<body>
+	
+	<img class="logo" src ="images\shopping cart.png" 
+							alt ="shopping cart" width="200" height="200" >
+	<h2>Shooping Cart</h2>
+	<h3>The online shopping store</h3>
+	<hr>
+	<ul id="ul1" >
+		<li id="li1"><a href="index.html">Home</a></li>
+		<li id="li1"><a href="news.html">News</a></li>
+		<li id="li1"><a href="register.html">Contact</a></li>
+		<li id="li1"><a href="about.php">About us</a></li>
+	</ul>
+	<h4 style = "text-align:center">Add item</h4>
+	
+<form method="POST" action="submitaAddItems.php">
+
+	<label for="item">Item Name</label><br>
+	<input type="text"  id="item" name="item" style = "width:25%"><br>
+	<label for="code">Item Code</label><br>
+	<input type="text"  id="code" name="code" style = "width:25%"><br>
+	<label for="price">Price</label><br>
+	<input type="text" id="price" name="price" style = "width:25%"><br>
+	<label for="qun">Quntity</label><br>
+	<input type="text" id="qun" name="qun" style = "width:25%"><br>
+	<label for="desc">Item Description</label><br>
+	<textarea id="desc" name="desc" rows="5" cols="30"></textarea><br>
+	
+	<input type="submit"  class="sub" id = "submitBtn">
+</form>
+
+	<hr>
+	<footer>
+	<center>
+	<p>Created by: H.E.S.Thiyanima</p>
+	<a href="https://courseweb.sliit.lk/login/">Visit to Our course</a>
+	</center>
+</body>
+</html>

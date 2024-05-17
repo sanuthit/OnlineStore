@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Shopping Cart</title>
+	<link rel="stylesheet" href="styles\styles.css">
+	<script src ="js\myScript.js"></script>
+	<script type="text/javascript">
+		var date = new Date();
+		var tdy = date.getDate();
+		var mon = date.getMonth()+1;
+		var yr = date.getFullYear();
+		document.write(tdy+"-"+mon+"-"+yr);
+	</script>
+	
+</head>
+<body>
+	<p id="date"></p>
+	<img class="logo" src ="images\shopping cart.png" 
+							alt ="shopping cart" width="200" height="200" >
+	<h2>Shooping Cart</h2>
+	<h3>The online shopping store</h3>
+	<hr>
+	<ul id="ul1" >
+		<li id="li1"><a href="index.html">Home</a></li>
+		<li id="li1"><a href="news.html">News</a></li>
+		<li id="li1"><a href="register.html">Contact</a></li>
+		<li id="li1"><a href="about.php">About us</a></li>
+	</ul>
+
+		<button type="button" onclick="loadData('XS')" id="but">Iphone XS</button>
+		<button type="button" onclick="loadData('XSmax')" id="but">Iphone XS Max</button>
+		<button type="button" onclick="loadData('8s')" id="but">Iphone 8s plus</button>
+		<button type="button" onclick="loadData('se')" id="but">Iphone SE</button>
+		<button type="button" onclick="priceForLoop()" id="but">Average Price</button>
+		<button type="button" onclick="priceHigher()" id="but">Prices higher than 1000</button>
+		<button type="button" onclick="priceLower()" id="but">Prices lower than 1000</button>
+		<br><br>
+	<center>
+		<img id="photo" src="images\iphones.jpg" width="200px" height="300px">
+		<p id="dis">The Iphone is a line of smartphones designed and marketed by Apple Inc. It was first introduced in 2007 and has since become one of the most popular smartphone brands in the world. The iPhone has gone through many iterations over the years, with each new model offering improvements in features and performance. Some of the key features of the iPhone include its sleek design, high-quality camera, intuitive user interface, and access to a vast array of apps through the App Store. With millions of users around the globe, the iPhone has transformed the way we communicate, work, and play on the go.</p>
+	</center>
+	
+
+	<hr>
+	<footer>
+	<center>
+	<p>Created by: H.E.S.Thiyanima</p>
+	<a href="https://courseweb.sliit.lk/login/">Visit to Our course</a>
+	</center>
+</body>
+</html>

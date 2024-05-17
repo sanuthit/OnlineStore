@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Shopping Cart</title>
+	<link rel="stylesheet" href="styles\styles.css">
+	<script src ="js\myScript.js"></script>
+</head>
+<body>
+	
+	<img class="logo" src ="images\shopping cart.png"  
+							alt ="shopping cart" width="200" height="200" >
+	<h2>Shooping Cart</h2>
+	<h3>The online shopping store</h3>
+	<hr> 
+	<ul id="ul1" >
+		<li id="li1"><a href="index.html">Home</a></li>
+		<li id="li1"><a href="news.html">News</a></li>
+		<li id="li1"><a href="register.html">Contact</a></li>
+		<li id="li1"><a href="about.php">About us</a></li>
+	</ul>
+	<h1 style="text-align:center;">Registration Form</h1>
+
+	<form action="submitRegistration.php" method="post" onsubmit=" return checkPassword()">
+
+		<label for="fname">First Name</label><br>
+		<input type="text"  id="fname" name="fname" class="form1" required ><br>
+		<label for="lname">Last Name</label><br>
+		<input type="text" id="lname" name="lname" class="form1" required><br><br>
+		
+		<label for="gender">Gender</label><br>
+		<input type="radio" id="male" name="gender" value="male">
+		<label for="male"> Male </label>
+		<input type="radio" id="female" name="gender" value="female">
+		<label for="female"> Female </label><br><br>
+		
+		<label for="mobile">Mobile Number</label><br>
+		<input type="text" id="mobile" name="phone" pattern="[0-9]{10}" placeholder="0771111111"><br><br>
+		
+		<label for="mail">Email Address</label><br>
+		<input type="email" id="form2" id="mail" name="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\[a-z]{2,3}" placeholder="username@gmail.com"><br><br>
+		
+		<label for="address">Address</label><br>
+		<textarea id="address" name="address" rows="5" cols="30"></textarea><br><br>
+		
+		<label for="dob">Choose your DOB</label><br>
+		<input type="date" id="dob" name="dob"><br>
+		
+		<label for="psw">Password</label><br>
+		<input type="password" id="pws" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,10}" required><br>
+		<label for="rpsw">Re-enter Password</label><br>
+		<input type="password" id="rpws" name="rpsw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z).{5,10}"  required><br><br>
+		
+	
+		
+		<input type = "checkbox"  id="checkBox" onclick="enableButton()" >
+		
+		<label for="end">  Accept privacy policy and terms.</label><br><br>
+		
+		<input type="submit"  class="sub" id = "submitBtn" disabled  >
+	</form>
+	
+	<footer>
+	<center>
+	<p>Created by: H.E.S.Thiyanima</p>
+	<a href="https://courseweb.sliit.lk/login/">Visit to Our course</a>
+	</center>
+</body>
+</html>
